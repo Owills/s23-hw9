@@ -9,7 +9,7 @@ unable to complete. -/
 this time using the built in types -/
 
 -- part p1
-def app : List α → List α → List α
+def app : List Nat -> List Nat -> List Nat
   | List.nil,       bs => bs
   | List.cons a as, bs => List.cons a (app as bs)
 
@@ -18,11 +18,11 @@ def rev : List Nat -> List Nat
   | List.cons a L => app (rev L) (List.cons a List.nil) 
 
 -- 6 lines
-theorem app_nil : forall {T : Type} (l : List T), app l [] = l := 
+theorem app_nil : forall (l : List Nat), app l [] = l := 
   by sorry
 
 -- 6 lines
-theorem app_assoc : forall {T : Type} (l1 l2 l3 : List T),
+theorem app_assoc : forall (l1 l2 l3 : List Nat),
   app (app l1 l2) l3 = app l1 (app l2 l3) := 
  by sorry
 
@@ -62,10 +62,10 @@ theorem ev_sum : forall n m, ev n -> ev m -> ev (Nat.add n m) :=
  by sorry
 
 -- 3 lines
-theorem three_not_ev : ¬ ev 3 := 
+theorem three_not_ev : Not (ev 3) := 
  by sorry
 
-inductive ev' : Nat → Prop :=
+inductive ev' : Nat -> Prop :=
   | O : ev' 0
   | SSO : ev' 2
   | sum n m (Hn : ev' n) (Hm : ev' m) : ev' (Nat.add n m)
@@ -83,7 +83,7 @@ you can use the tactic `sorry` for any part that you are
 unable to complete. -/
 
 -- part p3
-inductive subseq : List Nat → List Nat → Prop
+inductive subseq : List Nat -> List Nat -> Prop
 | empty : subseq [] []
 | include x l1 l2 (H : subseq l1 l2) : subseq (x::l1) (x::l2)
 | skip x l1 l2 (H : subseq l1 l2) : subseq l1 (x::l2)

@@ -25,7 +25,7 @@ Please start with this file, filling in where appropriate, and submit your homew
 
 In this homework assignment, you will get significantly more practice doing more challenging proofs in Lean. 
 
-As before, we provide line counts for how long our reference solutions took: these are not the only ways to do the proofs (and you will not be penalized if you proofs take longer), and lines are a poor metric of complexity (as you can easily make things more compact or spread out), but are intended as a tool to help you not go too far down a path that isn't working. For example, if we had a proof that took 20 lines, and you are 100 lines into an attempt and it isn't working, it might be an indication that you made a decision (choice of what to do induction on, etc) that isn't working. 
+As before, we provide line counts for how long our reference solutions are: these are not the only ways to do the proofs (and you will not be penalized if you proofs take longer), and lines are a poor metric of complexity (as you can easily make things more compact or spread out), but are intended as a tool to help you not go too far down a path that isn't working. For example, if we had a proof that took 20 lines, and you are 100 lines into an attempt and it isn't working, it might be an indication that you made a decision (choice of what to do induction on, etc) that isn't working. 
 
 @section{Problem 1: Append and Reverse}
 First, a few proofs about append and reverse. For this assignment, we are using the standard library data structures, but here we define our own definition of append (called @lean{app}), instead of @lean{List.append}, and our own reverse (called @lean{rev}) instead of @lean{List.reverse}.
