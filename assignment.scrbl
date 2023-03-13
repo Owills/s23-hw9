@@ -9,7 +9,7 @@
 
 @title[#:tag "hw9" #:style (with-html5 manual-doc-style)]{Homework 9}
 
-@bold{Released:} @italic{Wednesday, March 15, 2023 at 6:00pm}
+@bold{Released:} @italic{Monday, March 13, 2023 at 6:00pm}
 
 @bold{Due:} @italic{Wednesday, March 22, 2023 at 6:00pm}
 
